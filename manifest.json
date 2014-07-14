@@ -1,0 +1,20 @@
+{
+   "content_scripts": [ {
+      "css": [ "flag.css" ],
+      "js": [ "seed.js", "content.js" ],
+      "matches": [ "http://*.56.com/*", "http://*.youku.com/*", "http://*.video.qq.com/*", "http://*.iqiyi.com/*", "http://*.tv.sohu.com/*", "http://*.v.qq.com/*", "http://*.sina.com.cn/*", "http://*.tudou.com/*" ],
+      "run_at": "document_end"
+   } ],
+   "default_locale": "zh_CN",
+   "description": "__MSG_extDesp__",
+   "icons": {
+      "128": "icon_128.png",
+      "32": "icon_32.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC9YNM/et6C6W4vEiSEim3rF0ZrwUgf8ZbYpdu8+6FSLEobc23x5Wa3kywoT824SeScmQ3qMlVrmZ2F88K4kuuTHhOXUjbohREgHQIENORHix9rCfsIfgckdZPcxZTbw0cxwFPnBOO1wysDmcHUoQlbKm2FdMQFoN8ds1Wa+Nlb4QIDAQAB",
+   "manifest_version": 2,
+   "name": "__MSG_extName__",
+   "permissions": [ "tabs", "storage", "unlimitedStorage", "\u003Call_urls\u003E" ],
+   "version": "0.1.6",
+   "web_accessible_resources": [ "flag.css", "seed.js", "sites/youku.js", "sites/sina.js", "sites/sohu.js", "sites/qq.js", "sites/56.js", "sites/iqiyi.js", "sites/tudou.js" ]
+}
